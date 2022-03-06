@@ -141,3 +141,21 @@ td {
     background-color: #E5E5E5;
     color: black;
 }
+
+footer {
+    display: block;
+    height: 100px;
+    color: white;
+    background-color: black;
+    max-width: 1000px;
+    margin: 20px auto;
+    align-content: center;
+}
+
+footer p{
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    padding-top: 20px;
+
+}
