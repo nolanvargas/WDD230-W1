@@ -131,11 +131,15 @@ footer {
     background-color: #14213D;
     color: #E5E5E5;
     height: 100px;
-    display: flex;
+    display: block;
     justify-content: center;
     margin-top: 50px;
 }
 
-footer p {
+footer p{
+    display: block;
+    max-width: fit-content;
+    margin: auto;
     padding-top: 20px;
+
 }
