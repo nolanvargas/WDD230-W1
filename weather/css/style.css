@@ -5,6 +5,23 @@ body {
     min-width: 379px;
 }
 
+/*-------------------- ASIDE --------------------*/
+
+#prestonPancakes {
+    display: none;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    color: #14213D;
+    background-color: #E5E5E5;
+    overflow:hidden;
+}
+
+#prestonPancakesMessage{
+    margin: 0 auto;
+    padding: 5px;
+}
+
 /*-------------------- HEADER --------------------*/
 
 header {
@@ -92,7 +109,17 @@ nav ul {
 	display: block;
 }
 
-@media (min-width: 32.5em) {
+@media (min-width: 548px) {
+
+    #currentWeather {
+        height: 300px;
+        width: 250px;
+    }
+
+    #prestonPancakes {
+        font-size: 1.25rem;
+    }
+
 	.navigation {
 		display: flex;
 	}
@@ -110,6 +137,11 @@ nav ul {
 
 /*-------------------- CONTENT --------------------*/
 
+#content {
+    max-width: 1000px;
+    margin: auto;
+
+}
 #cityName {
     display: block;
     text-align: center;
@@ -125,21 +157,103 @@ nav ul {
     margin: 10px auto;
 }
 
+#hero {
+    position: relative;
+    margin: 100px 10px;
+}
+
+#hero img {
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+}
+
+#currentWeather {
+    border: 2px solid gray;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .9);
+    border: solid dashed blue;
+    width: 180px;
+    height: 200px;
+    top: 40%;
+    right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6 15%);
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#currentWeather h5 {
+    margin: 0;
+    padding: 5px;
+}
+
+#currentWeather h3 {
+    grid-area: 1/1/1/3;
+    text-align: center;
+}
+
+#rightAlign {
+    text-align: right;
+}
+
+#article {
+    max-width: 1000px;
+    background-color: #E5E5E5;
+    position: relative;
+    margin: 50px 10px;
+}
+
+#article img {
+    display: flex;
+    max-width: 100%;
+    margin: 50px auto;
+    padding-top: 10px;
+}
+
+#article p {
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.15rem;
+    margin-top: -50px;
+}
+
+#contact {
+    display: block;
+    background-color: #FCA311;
+    padding: 15px;
+}
+
+#contact h6 {
+    text-align: center;
+}
+
+#contact img{
+    width: 30px;
+}
 /*-------------------- FOOTER --------------------*/
 
 footer {
     background-color: #14213D;
     color: #E5E5E5;
-    height: 100px;
     display: block;
-    justify-content: center;
     margin-top: 50px;
+    padding: 20px;
 }
 
-footer p{
-    display: block;
-    max-width: fit-content;
-    margin: auto;
-    padding-top: 20px;
-
+footer ul {
+    list-style-type: none;
+    display: 
+    
 }
+
+footer ul li {
+    display: flex;
+    height: ;
+}
+
+footer img {
+    width: 30px;
+}
+
