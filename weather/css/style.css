@@ -237,20 +237,100 @@ nav ul {
 footer {
     background-color: #14213D;
     color: #E5E5E5;
-    display: block;
+    display: grid;
     margin-top: 50px;
     padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 30px 1fr 30px 30px;
+}
+
+#info {
+    grid-area: 1/1/4/1;
+    margin: 0;
+    margin-top: -17px;
 }
 
 footer ul {
-    list-style-type: none;    
+    list-style-type: none;  
+    float: left;  
 }
 
 footer ul li {
-    display: flex;
+    margin: -7px;
+    padding: 0;
 }
 
 footer img {
     width: 30px;
 }
 
+#map {
+    float: left;
+    position: relative;
+    bottom: 4px;
+    width: 1.5rem;
+    margin-right: 5px;
+}
+
+#address {
+    padding-left: 4px;
+}
+
+#footerA, #footerB {
+    margin: 0;
+    align-self: center;
+}
+
+#footerA {
+    grid-area: 5/1;
+    font-size: .75rem;
+    padding-left: 30px;
+}
+
+#footerB {
+    grid-area: 5/2;
+    font-size: .75rem;
+    justify-self: right;
+}
+
+#social {
+    grid-area: 1/2/1/2;
+    margin:0;
+    justify-self: right;
+    padding-right: 0;
+    padding-top: 5px;
+}
+
+#socialIcons {
+    grid-area: 2/2;
+    margin: 0;
+}
+
+#socialIcons li {
+    margin: 5px;
+    float: right;
+    filter: invert(1);
+
+}
+
+#usa {
+    grid-area: 4/1;
+    display: inline-block;
+    margin:0;
+    list-style-type: none;
+    align-self: center;
+
+}
+
+#usa li {
+    display: inline-flex;
+}
+
+#country {
+    position: relative;
+    bottom: 9px;
+    left: 14px
+}
