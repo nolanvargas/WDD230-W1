@@ -109,8 +109,24 @@ nav ul {
 	display: block;
 }
 
+
+/*-------------------- MEDIA --------------------*/
+@media (max-width: 999px) {
+
+    #gallery {
+        margin: auto;
+    }
+
+    .galleryImg {
+        width: 80%;
+        display: block;
+        margin: 30px auto;
+    }
+}
+
 @media (min-width: 548px) {
 
+   
     #currentWeather {
         height: 300px;
         width: 250px;
@@ -135,7 +151,35 @@ nav ul {
 	}
 }
 
+@media (min-width: 1000px) {
+
+    #gallery {
+        margin: 30px auto;
+    }
+
+    .galleryImg {
+        width: 40%;
+        margin: 30px;
+
+    }
+
+}
+
+@media (min-width: 1500px) {
+    
+    #gallery {
+        margin: 30px auto;
+    }
+
+    .galleryImg {
+        width: 32%
+    }
+}
+
 /*-------------------- CONTENT --------------------*/
+#gallery {
+    max-width: 1000px;
+}
 
 #content {
     max-width: 1000px;
