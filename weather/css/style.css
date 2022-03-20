@@ -264,6 +264,14 @@ nav ul {
   margin: auto;
 }
 
+#thanks {
+  width: 500px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+  margin: 50px auto;
+  text-align: center;
+}
+
 #currentWeather {
   border: 2px solid gray;
   position: absolute;
